@@ -16,8 +16,17 @@
         <script src="app/source/angular-resource/angular-resource.min.js"></script>
         <script src="app/source/angular-material/angular-material.js"></script>
 <!--    Angular Modules -->
+        <script src="app/app.js"></script>
+<!--    overview module -->
+        <script src="app/controllers/overview.controller.js"></script>
+<!--    qrcode module -->
+        <script src="app/controllers/qrcode.controller.js"></script>
+        <script src="app/services/qrcode.service.js"></script>
+<!--    overview module -->
+        <script src="app/controllers/settings.controller.js"></script>
     </head>
-    <body>
+    <body ng-app="beFineApp">
         <h1>main</h1>
+        <div ui-view=""></div>
     </body>
 </html>
