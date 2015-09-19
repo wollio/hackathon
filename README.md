@@ -2,6 +2,8 @@
 
 ----------
 
+the application is reachable here: [http://hackathon-secanis.rhcloud.com](http://hackathon-secanis.rhcloud.com)
+
 ### clone repository
 
 	git clone https://github.com/wollio/hackathon.git
@@ -24,6 +26,11 @@ install dependencies
 php integrated webserver
 
 	php -S localhost:8080
+
+visit [http://localhost:8080](http://localhost:8080)
+
+> **notice:**
+> *if you have an pdo driver error please check that you have discomment the pdo_mysql driver in the php.ini file. Restart the webserver after changes on php.ini!*
 
 ### database
 
