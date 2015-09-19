@@ -23,6 +23,16 @@ angular.module('beFineApp').config(function($stateProvider, $urlRouterProvider) 
             }
         }
     })
+    
+    .state('/', {
+        url: '/',
+        views: {
+            '': {
+                templateUrl: 'app/views/overview.html',
+                controller: 'OverviewCtrl'
+            }
+        }
+    })
 
     .state('qrcode', {
         url: '/qrcode',
