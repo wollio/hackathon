@@ -11,7 +11,9 @@ angular.module('beFineApp',
         'feature.settings'
     ]);
 
-angular.module('beFineApp').config(function($stateProvider, $urlRouterProvider) {
+angular.module('beFineApp', [
+    'ngAnimate', 'ngResource', 'ui.router', 'ngMaterial'
+]).config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
 //        this state will be visible to everyone
     .state('root', {
@@ -70,6 +72,10 @@ angular.module('beFineApp').config(function($stateProvider, $urlRouterProvider) 
 
     $urlRouterProvider.otherwise("/404");
 
+}).config(function ($mdThemingProvider) {
+    $mdThemingProvider.theme('default')
+        .primaryPalette('pink')
+        .accentPalette('orange');
 });
 
 angular.module('beFineApp').run(function($rootScope, $location, $state) {
@@ -81,4 +87,5 @@ angular.module('beFineApp').run(function($rootScope, $location, $state) {
     $rootScope.apiPath = '/api/';
     $rootScope.formatDate = 'dd.MM.yyyy';
     $rootScope.formatDateTime = 'dd.MM.yyyy HH:mm:ss';
-});
+
+})
