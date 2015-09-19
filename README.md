@@ -17,8 +17,7 @@ install dependencies
 	composer install
 
 
-> **notice:** 
-> you have to install the dependencies because the app/source folder
+> **notice:** *you have to install the dependencies because the app/source folder
 > and the api/composer folder are in the git ignore file*
 
 ### start application

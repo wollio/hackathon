@@ -31,6 +31,16 @@
         $app->response->setBody(json_encode(array('test' => 'ok')));
     });
 
+
+    // get user inkl all
+    // get quests inkl rewards
+    // get quest inkl reward
+    
+
+    // admin tool
+    // post quest, put quest, get quest, delete quest
+    // post service, put service, get service, delete service
+
 //    run slim application
     $app->run();
 
