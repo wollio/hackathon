@@ -3,10 +3,10 @@
 //    load database and create instance
     $db = new medoo([
         'database_type' => 'mysql',
-        'database_name' => '',
-        'server' => '',
-        'username' => '',
-        'password' => '',
+        'database_name' => 'hackathon',
+        'server' => 'secanis.ch',
+        'username' => 'admin566hHtJ',
+        'password' => 'vix9XNRF3cT_',
         'charset' => 'utf8',
         'port' => 3306
     ]);
@@ -27,7 +27,7 @@
 //    slim app routes
     
     // slim controllers
-    $app->get('/', function ($type) use($app, $db) {
+    $app->get('/test', function () use($app, $db) {
         $app->response->setBody(json_encode(array('test' => 'ok')));
     });
 

@@ -15,16 +15,35 @@ install dependencies
 	composer install
 
 
-> **attention:**
-> 
-> you have to install the dependencies because the app/source folder
-> and the api/composer folder are in the git ignore file
+> **notice:** 
+> *you have to install the dependencies because the app/source folder
+> and the api/composer folder are in the git ignore file*
 
 ### start application
 
 php integrated webserver
 
 	php -S localhost:8080
+
+### database
+
+**SQL-DB Development**
+
+	user: admin566hHtJ
+	password: vix9XNRF3cT_
+	database: hackathon
+	host: secanis.ch
+
+**SQL-DB Production**
+
+[https://hackathon-secanis.rhcloud.com/phpmyadmin](https://hackathon-secanis.rhcloud.com/phpmyadmin)
+
+	user: admin566hHtJ
+	password: vix9XNRF3cT_
+	database: hackathon
+	host: localhost
+
+> **notice:** *direct access on the production database won't work because we need a SSH certifacte, it's the easier way over two databases!*
 
 
 ### installation
