@@ -1,0 +1,14 @@
+C:\Users\Matthias.SECANIS\Desktop\Webserver\hackathon\platforms\wp8\Bin\Debug\ApplicationIcon.png
+C:\Users\Matthias.SECANIS\Desktop\Webserver\hackathon\platforms\wp8\Bin\Debug\Background.png
+C:\Users\Matthias.SECANIS\Desktop\Webserver\hackathon\platforms\wp8\Bin\Debug\ch.hackathon.befine.dll
+C:\Users\Matthias.SECANIS\Desktop\Webserver\hackathon\platforms\wp8\Bin\Debug\ch.hackathon.befine.pdb
+C:\Users\Matthias.SECANIS\Desktop\Webserver\hackathon\platforms\wp8\Bin\Debug\AppManifest.xaml
+C:\Users\Matthias.SECANIS\Desktop\Webserver\hackathon\platforms\wp8\Bin\Debug\Properties\WMAppManifest.xml
+C:\Users\Matthias.SECANIS\Desktop\Webserver\hackathon\platforms\wp8\Bin\Debug\CordovaAppProj_Debug_AnyCPU.xap
+C:\Users\Matthias.SECANIS\Desktop\Webserver\hackathon\platforms\wp8\obj\Debug\App.g.cs
+C:\Users\Matthias.SECANIS\Desktop\Webserver\hackathon\platforms\wp8\obj\Debug\cordovalib\CordovaView.g.cs
+C:\Users\Matthias.SECANIS\Desktop\Webserver\hackathon\platforms\wp8\obj\Debug\MainPage.g.cs
+C:\Users\Matthias.SECANIS\Desktop\Webserver\hackathon\platforms\wp8\obj\Debug\ch.hackathon.befine.g.resources
+C:\Users\Matthias.SECANIS\Desktop\Webserver\hackathon\platforms\wp8\obj\Debug\ch.hackathon.befine.dll
+C:\Users\Matthias.SECANIS\Desktop\Webserver\hackathon\platforms\wp8\obj\Debug\ch.hackathon.befine.pdb
+C:\Users\Matthias.SECANIS\Desktop\Webserver\hackathon\platforms\wp8\obj\Debug\XapCacheFile.xml
