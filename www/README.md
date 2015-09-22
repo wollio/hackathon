@@ -52,13 +52,6 @@ visit [http://localhost:8080](http://localhost:8080)
 > **notice:** *direct access on the production database won't work because we need a SSH certifacte, it's the easier way over two databases!*
 
 
-### installation
-
-1. <code>npm install -g cordova ionic</code>
-2. <code>ionic serve</code>
-3. visit <a href="http://localhost:8100/">http://localhost:8100/</a>
-
-
 ### more information
 
 * [http://slimframework.com/](http://slimframework.com)
