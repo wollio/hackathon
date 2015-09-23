@@ -1,6 +1,7 @@
 angular.module('feature.overview', []);
 angular.module('feature.qrcode', []);
 angular.module('feature.settings', []);
+angular.module('feature.navigation', []);
 
 angular.module('beFineApp',
     [
@@ -8,11 +9,12 @@ angular.module('beFineApp',
         'ui.router',
         'feature.overview',
         'feature.qrcode',
-        'feature.settings'
+        'feature.settings',
+        'feature.navigation'
     ]);
 
 angular.module('beFineApp', [
-    'ngAnimate', 'ngResource', 'ui.router', 'ngMaterial', 'feature.overview', 'feature.qrcode', 'feature.settings'
+    'ngAnimate', 'ngResource', 'ui.router', 'ngMaterial', 'feature.overview', 'feature.qrcode', 'feature.settings', 'feature.navigation'
 ]).config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
 //        this state will be visible to everyone
@@ -84,8 +86,8 @@ angular.module('beFineApp', [
 
 }).config(function ($mdThemingProvider) {
     $mdThemingProvider.theme('default')
-        .primaryPalette('pink')
-        .accentPalette('orange');
+        .primaryPalette('amber')
+        .accentPalette('brown');
 });
 
 angular.module('beFineApp').run(function($rootScope, $location, $state) {

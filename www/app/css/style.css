@@ -1,0 +1,112 @@
+/*menu {*/
+/*color: red;*/
+/*}*/
+@media (max-width: 1200px) {
+    *:not(input) {
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+}
+
+.md-button {
+    text-transform: none;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
+
+.transparent {
+    background-color: rgba(0,0,0,0) !important;
+}
+
+.loginwrapper {
+    padding: 20px;
+}
+
+.headinline {
+    display: inline;
+}
+
+.monthSwitchTitle {
+    min-width: 150px;
+    text-align: center;
+}
+
+.menu-item {
+    background: none;
+    cursor: pointer;
+    display: block;
+    color: #333333;
+    font-size: inherit;
+    line-height: 50px;
+    max-height: 50px;
+    opacity: 1;
+    outline: none;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    width: 100%;
+    z-index: 1;
+    -webkit-transition: .2s ease-in-out;
+    -webkit-transition-property: max-height, background-color, opacity;
+    -moz-transition: .2s ease-in-out;
+    -moz-transition-property: max-height, background-color, opacity;
+    transition: .2s ease-in-out;
+    transition-property: max-height, background-color, opacity;
+    border-width: 0;
+    margin: 0;
+    padding: 0 28px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+button.md-button span {
+    display: inline-block;
+}
+
+.md-button.md-default-theme.md-primary {
+    color: #584125;
+    fill: #584125;
+}
+
+
+button.md-button span:first-letter {
+    text-transform: uppercase;
+}
+
+.md-header-items-container {
+    text-transform: none;
+}
+
+button.md-button span:first-letter {
+    text-transform: uppercase;
+}
+
+button.menu-icon {
+    width: 40px;
+    text-align: center;
+    background: none;
+    border: none;
+}
+
+.period-control {
+    font-size: 20px;
+}
+
+.period-control > .current {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.period-control.small {
+    font-size: 16px;
+}
+
+
+
