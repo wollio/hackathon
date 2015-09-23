@@ -10,7 +10,7 @@ the application is reachable here: [http://hackathon-secanis.rhcloud.com](http:/
 
 install dependencies
 
-	cd ./hackathon
+	cd ./hackathon/www
 	bower install
 
 
