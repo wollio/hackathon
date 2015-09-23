@@ -39,7 +39,7 @@
         <md-toolbar flex="80" class="md-content-padding">
             beFine
         </md-toolbar>
-        <div flex ng-controller="NavigationCtrl" flex layout-fill layout="column">
+        <div flex ng-controller="NavigationCtrl" flex layout="column">
             <md-content flex style="overflow-x: hidden;">
                 <a ng-repeat="page in pages" class="menu-item" is="{{page.selected}}" ng-click="openPage(page.url)"
                    md-ink-ripple>
