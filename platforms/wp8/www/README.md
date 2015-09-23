@@ -10,11 +10,8 @@ the application is reachable here: [http://hackathon-secanis.rhcloud.com](http:/
 
 install dependencies
 
-	cd ./hackathon
+	cd ./hackathon/www
 	bower install
-	
-	cd ./api
-	composer install
 
 
 > **notice:** *you have to install the dependencies because the app/source folder
