@@ -10,11 +10,8 @@ the application is reachable here: [http://hackathon-secanis.rhcloud.com](http:/
 
 install dependencies
 
-	cd ./hackathon
+	cd ./hackathon/www
 	bower install
-	
-	cd ./api
-	composer install
 
 
 > **notice:** *you have to install the dependencies because the app/source folder
@@ -50,13 +47,6 @@ visit [http://localhost:8080](http://localhost:8080)
 	host: localhost
 
 > **notice:** *direct access on the production database won't work because we need a SSH certifacte, it's the easier way over two databases!*
-
-
-### installation
-
-1. <code>npm install -g cordova ionic</code>
-2. <code>ionic serve</code>
-3. visit <a href="http://localhost:8100/">http://localhost:8100/</a>
 
 
 ### more information
