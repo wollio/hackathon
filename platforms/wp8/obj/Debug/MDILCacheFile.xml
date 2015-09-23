@@ -1,0 +1,35 @@
+﻿<xapCache source="C:\Projects\hackathon\platforms\wp8\Bin\Debug\CordovaAppProj_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="23.09.2015 20:55:11">
+  <file source="C:\Projects\hackathon\platforms\wp8\obj\Debug\ch.hackathon.befine.dll" archivePath="ch.hackathon.befine.dll" lastWriteTime="23.09.2015 20:55:11" />
+  <file source="C:\Projects\hackathon\platforms\wp8\config.xml" archivePath="config.xml" lastWriteTime="23.09.2015 20:42:44" />
+  <file source="C:\Projects\hackathon\platforms\wp8\www\API.md" archivePath="www\API.md" lastWriteTime="23.09.2015 20:42:44" />
+  <file source="C:\Projects\hackathon\platforms\wp8\www\app\app.js" archivePath="www\app\app.js" lastWriteTime="23.09.2015 20:42:44" />
+  <file source="C:\Projects\hackathon\platforms\wp8\www\app\controllers\overview.controller.js" archivePath="www\app\controllers\overview.controller.js" lastWriteTime="23.09.2015 20:42:44" />
+  <file source="C:\Projects\hackathon\platforms\wp8\www\app\controllers\qrcode.controller.js" archivePath="www\app\controllers\qrcode.controller.js" lastWriteTime="23.09.2015 20:42:44" />
+  <file source="C:\Projects\hackathon\platforms\wp8\www\app\controllers\settings.controller.js" archivePath="www\app\controllers\settings.controller.js" lastWriteTime="23.09.2015 20:42:44" />
+  <file source="C:\Projects\hackathon\platforms\wp8\www\app\css\main.css" archivePath="www\app\css\main.css" lastWriteTime="23.09.2015 20:42:44" />
+  <file source="C:\Projects\hackathon\platforms\wp8\www\app\css\quest.css" archivePath="www\app\css\quest.css" lastWriteTime="23.09.2015 20:42:44" />
+  <file source="C:\Projects\hackathon\platforms\wp8\www\app\images\images.txt" archivePath="www\app\images\images.txt" lastWriteTime="23.09.2015 20:42:44" />
+  <file source="C:\Projects\hackathon\platforms\wp8\www\app\services\qrcode.service.js" archivePath="www\app\services\qrcode.service.js" lastWriteTime="23.09.2015 20:42:44" />
+  <file source="C:\Projects\hackathon\platforms\wp8\www\app\views\404.html" archivePath="www\app\views\404.html" lastWriteTime="23.09.2015 20:42:44" />
+  <file source="C:\Projects\hackathon\platforms\wp8\www\app\views\overview.html" archivePath="www\app\views\overview.html" lastWriteTime="23.09.2015 20:42:44" />
+  <file source="C:\Projects\hackathon\platforms\wp8\www\app\views\qrcode.html" archivePath="www\app\views\qrcode.html" lastWriteTime="23.09.2015 20:42:44" />
+  <file source="C:\Projects\hackathon\platforms\wp8\www\app\views\settings.html" archivePath="www\app\views\settings.html" lastWriteTime="23.09.2015 20:42:44" />
+  <file source="C:\Projects\hackathon\platforms\wp8\www\bower.json" archivePath="www\bower.json" lastWriteTime="23.09.2015 20:42:44" />
+  <file source="C:\Projects\hackathon\platforms\wp8\www\cordova.js" archivePath="www\cordova.js" lastWriteTime="23.09.2015 20:42:44" />
+  <file source="C:\Projects\hackathon\platforms\wp8\www\cordova_plugins.js" archivePath="www\cordova_plugins.js" lastWriteTime="23.09.2015 20:42:44" />
+  <file source="C:\Projects\hackathon\platforms\wp8\www\index.html" archivePath="www\index.html" lastWriteTime="23.09.2015 20:42:44" />
+  <file source="C:\Projects\hackathon\platforms\wp8\www\README.md" archivePath="www\README.md" lastWriteTime="23.09.2015 20:42:44" />
+  <file source="C:\Projects\hackathon\platforms\wp8\Images\appbar.back.rest.png" archivePath="Images\appbar.back.rest.png" lastWriteTime="23.09.2015 17:49:07" />
+  <file source="C:\Projects\hackathon\platforms\wp8\Images\appbar.close.rest.png" archivePath="Images\appbar.close.rest.png" lastWriteTime="23.09.2015 17:49:07" />
+  <file source="C:\Projects\hackathon\platforms\wp8\Images\appbar.feature.video.rest.png" archivePath="Images\appbar.feature.video.rest.png" lastWriteTime="23.09.2015 17:49:07" />
+  <file source="C:\Projects\hackathon\platforms\wp8\Images\appbar.next.rest.png" archivePath="Images\appbar.next.rest.png" lastWriteTime="23.09.2015 17:49:07" />
+  <file source="C:\Projects\hackathon\platforms\wp8\Images\appbar.save.rest.png" archivePath="Images\appbar.save.rest.png" lastWriteTime="23.09.2015 17:49:07" />
+  <file source="C:\Projects\hackathon\platforms\wp8\Images\appbar.stop.rest.png" archivePath="Images\appbar.stop.rest.png" lastWriteTime="23.09.2015 17:49:07" />
+  <file source="C:\Projects\hackathon\platforms\wp8\VERSION" archivePath="VERSION" lastWriteTime="23.09.2015 17:49:07" />
+  <file source="C:\Projects\hackathon\platforms\wp8\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="23.09.2015 17:49:07" />
+  <file source="C:\Projects\hackathon\platforms\wp8\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="23.09.2015 20:35:22" />
+  <file source="C:\Projects\hackathon\platforms\wp8\Bin\Debug\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="23.09.2015 17:49:07" />
+  <file source="C:\Projects\hackathon\platforms\wp8\Bin\Debug\Background.png" archivePath="Background.png" lastWriteTime="23.09.2015 17:49:07" />
+  <file source="C:\Projects\hackathon\platforms\wp8\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="23.09.2015 17:49:07" />
+  <file source="C:\Projects\hackathon\platforms\wp8\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="23.09.2015 17:49:07" />
+</xapCache>
