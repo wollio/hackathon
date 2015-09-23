@@ -32,12 +32,12 @@
 </head>
 <body ng-app="beFineApp">
 <div layout="row" layout-fill>
-    <md-sidenav flex class="md-sidenav-left md-whiteframe-z2 md-closed ng-isolate-scope" md-component-id="nav"
+    <md-sidenav class="md-sidenav-left md-whiteframe-z2 md-closed ng-isolate-scope" md-component-id="nav"
                 md-is-locked-open="$media('gt-md')" layout="column" style="overflow-y: hidden;">
-        <md-toolbar class="md-content-padding">
+        <md-toolbar flex="80" class="md-content-padding">
             beFine
         </md-toolbar>
-        <div ng-controller="NavigationCtrl" flex layout-fill>
+        <div flex ng-controller="NavigationCtrl" flex layout-fill  layout="column">
             <md-content flex style="overflow-x: hidden;">
                 <a ng-repeat="page in pages" class="menu-item" is="{{page.selected}}" ng-click="openPage(page.url)"
                    md-ink-ripple>
@@ -45,13 +45,17 @@
                     <span ng-cloak style="margin-left: 5px;">{{page.title}}</span>
                 </a>
             </md-content>
-            <md-content>
+            <div>
                 <md-divider></md-divider>
                 <a ng-repeat="action in actions" class="menu-item"  ng-click="openPage(action.url)" md-ink-ripple>
                     <i class="icon fa fa-{{action.icon}}"></i>
                     <span ng-cloak style="margin-left: 5px;">{{action.title}}</span>
                 </a>
-            </md-content>
+                <md-divider></md-divider>
+                <div class="menu-item" >
+                    made with <i style="color: red" class="icon fa fa-heart"></i> in Switzerland
+                </div>
+            </div>
         </div>
     </md-sidenav>
 
