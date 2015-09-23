@@ -12,9 +12,6 @@ install dependencies
 
 	cd ./hackathon
 	bower install
-	
-	cd ./api
-	composer install
 
 
 > **notice:** *you have to install the dependencies because the app/source folder
