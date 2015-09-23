@@ -1,10 +1,5 @@
 angular.module('feature.navigation')
     .controller('NavigationCtrl', function($scope, $rootScope, $location, $state){
-        // Funktion welche die geklickte Seite öffnet
-        $scope.openPage = function (page) {
-            $location.path(page);
-        };
-        
         $scope.pages = [
             {
                 url: '/',

@@ -29,15 +29,17 @@
     <script src="app/services/qrcode.service.js"></script>
     <!--    overview module -->
     <script src="app/controllers/settings.controller.js"></script>
+    <!--    parent module -->
+    <script src="app/controllers/parent.controller.js"></script>
 </head>
-<body ng-app="beFineApp">
+<body ng-app="beFineApp" ng-controller="ParentCtrl">
 <div layout="row" layout-fill>
     <md-sidenav class="md-sidenav-left md-whiteframe-z2 md-closed ng-isolate-scope" md-component-id="nav"
-                md-is-locked-open="$media('gt-md')" layout="column" style="overflow-y: hidden;">
+                md-is-locked-open="$mdMedia('gt-md')" layout="column" style="overflow-y: hidden;">
         <md-toolbar flex="80" class="md-content-padding">
             beFine
         </md-toolbar>
-        <div flex ng-controller="NavigationCtrl" flex layout-fill  layout="column">
+        <div flex ng-controller="NavigationCtrl" flex layout-fill layout="column">
             <md-content flex style="overflow-x: hidden;">
                 <a ng-repeat="page in pages" class="menu-item" is="{{page.selected}}" ng-click="openPage(page.url)"
                    md-ink-ripple>
@@ -47,25 +49,37 @@
             </md-content>
             <div>
                 <md-divider></md-divider>
-                <a ng-repeat="action in actions" class="menu-item"  ng-click="openPage(action.url)" md-ink-ripple>
+                <a ng-repeat="action in actions" class="menu-item" ng-click="openPage(action.url)" md-ink-ripple>
                     <i class="icon fa fa-{{action.icon}}"></i>
                     <span ng-cloak style="margin-left: 5px;">{{action.title}}</span>
                 </a>
                 <md-divider></md-divider>
-                <div class="menu-item" >
+                <div class="menu-item">
                     made with <i style="color: red" class="icon fa fa-heart"></i> in Switzerland
                 </div>
             </div>
         </div>
     </md-sidenav>
 
-
-    <md-content flex layout-padding>
-        <div layout="column" layout-fill layout-align="top center">
-            <div ui-view=""></div>
+    <div layout="column" layout-fill>
+        <div layout="column" tabIndex="1" role="main">
+            <md-toolbar class="app-toolbar">
+                <div layout="row">
+                    <md-button class="menu-icon" hide-gt-md aria-label="{{'header_toggle_menu'}}"  ng-click="toggleMenu()" style="margin-top: 12px;">
+                        <i class="fa fa-bars"></i>
+                    </md-button>
+                </div>
+            </md-toolbar>
+            <div ng-view="" flex layout="column"></div>
         </div>
-        <div flex></div>
-    </md-content>
+
+        <md-content flex layout-padding  layout-fill>
+            <div layout="column" layout-fill layout-align="top center">
+                <div ui-view=""></div>
+            </div>
+            <div flex></div>
+        </md-content>
+    </div>
 </div>
 </body>
 </html>

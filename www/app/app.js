@@ -2,6 +2,7 @@ angular.module('feature.overview', []);
 angular.module('feature.qrcode', []);
 angular.module('feature.settings', []);
 angular.module('feature.navigation', []);
+angular.module('feature.parent', []);
 
 angular.module('beFineApp',
     [
@@ -10,11 +11,12 @@ angular.module('beFineApp',
         'feature.overview',
         'feature.qrcode',
         'feature.settings',
-        'feature.navigation'
+        'feature.navigation',
+        'feature.parent',
     ]);
 
 angular.module('beFineApp', [
-    'ngAnimate', 'ngResource', 'ui.router', 'ngMaterial', 'feature.overview', 'feature.qrcode', 'feature.settings', 'feature.navigation'
+    'ngAnimate', 'ngResource', 'ui.router', 'ngMaterial', 'feature.overview', 'feature.qrcode', 'feature.settings', 'feature.navigation', 'feature.parent',
 ]).config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
 //        this state will be visible to everyone
