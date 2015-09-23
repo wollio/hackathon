@@ -31,13 +31,13 @@
     <script src="app/controllers/settings.controller.js"></script>
 </head>
 <body ng-app="beFineApp">
-<div layout="row">
-    <md-sidenav flex layout-fill class="md-sidenav-left md-whiteframe-z2 md-closed ng-isolate-scope" md-component-id="nav"
+<div layout="row" layout-fill>
+    <md-sidenav flex class="md-sidenav-left md-whiteframe-z2 md-closed ng-isolate-scope" md-component-id="nav"
                 md-is-locked-open="$media('gt-md')" layout="column" style="overflow-y: hidden;">
         <md-toolbar class="md-content-padding">
             beFine
         </md-toolbar>
-        <div ng-controller="NavigationCtrl">
+        <div ng-controller="NavigationCtrl" flex layout-fill>
             <md-content flex style="overflow-x: hidden;">
                 <a ng-repeat="page in pages" class="menu-item" is="{{page.selected}}" ng-click="openPage(page.url)"
                    md-ink-ripple>
