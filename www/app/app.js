@@ -49,6 +49,16 @@ angular.module('beFineApp', [
             }
         }
     })
+
+        .state('history', {
+            url: '/history',
+            views: {
+                '': {
+                    templateUrl: 'app/views/history.html',
+                    controller: 'HistorysCtrl'
+                }
+            }
+        })
     
     .state('settings', {
         url: '/settings',

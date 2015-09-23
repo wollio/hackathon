@@ -36,10 +36,12 @@
     min-width: 150px;
     text-align: center;
 }
+a.menu-item {
+    cursor: pointer;
+}
 
 .menu-item {
     background: none;
-    cursor: pointer;
     display: block;
     color: #333333;
     font-size: inherit;

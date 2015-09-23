@@ -7,14 +7,19 @@ angular.module('feature.navigation')
                 icon: 'trophy',
             },
             {
-                url: '/',
+                url: '/qrcode',
                 title: 'QR-Scanner',
                 icon: 'qrcode',
             },
             {
-                url: '/admin/timeline',
+                url: '/history',
                 title: 'History',
                 icon: 'list',
+            },
+            {
+                url: '/settings',
+                title: 'Einstellungen',
+                icon: 'cog',
             },
         ];
 
