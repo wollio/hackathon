@@ -12,7 +12,7 @@ angular.module('beFineApp',
     ]);
 
 angular.module('beFineApp', [
-    'ngAnimate', 'ngResource', 'ui.router', 'ngMaterial'
+    'ngAnimate', 'ngResource', 'ui.router', 'ngMaterial', 'feature.overview', 'feature.qrcode', 'feature.settings'
 ]).config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
 //        this state will be visible to everyone
