@@ -147,6 +147,10 @@
             <DependentUpon>MainPage.xaml</DependentUpon>
         </Compile>
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Page Include="Plugins\phonegap-plugin-barcodescanner\BarcodeScannerUI.xaml">
+            <SubType>Designer</SubType>
+            <Generator>MSBuild:Compile</Generator>
+        </Page>
     </ItemGroup>
     <ItemGroup>
         <ApplicationDefinition Include="App.xaml">
@@ -217,4 +221,21 @@
         <PostBuildEvent>
         </PostBuildEvent>
     </PropertyGroup>
+    <ItemGroup>
+        <Compile Include="Plugins\phonegap-plugin-barcodescanner\BarcodeScanner.cs" />
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="Plugins\phonegap-plugin-barcodescanner\BarcodeScannerTask.cs" />
+    </ItemGroup>
+    <ItemGroup />
+    <ItemGroup>
+        <Compile Include="Plugins\phonegap-plugin-barcodescanner\BarcodeScannerUI.xaml.cs">
+            <DependentUpon>BarcodeScannerUI.xaml</DependentUpon>
+        </Compile>
+    </ItemGroup>
+    <ItemGroup>
+        <Reference Include="zxing.wp8.0">
+            <HintPath>plugins/phonegap-plugin-barcodescanner/zxing.wp8.0.dll</HintPath>
+        </Reference>
+    </ItemGroup>
 </Project>
