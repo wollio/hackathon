@@ -1,1 +1,19 @@
-overview
+<div layout-fill>
+<md-grid-list md-cols="2" md-row-height="1:1" md-gutter="12px">
+    <md-grid-tile style="background: #4E342E;" md-rowspan="1" md-colspan="2" ng-click="openQuest(user.masterQuest.questID)">
+        <md-progress-circular class="md-accent md-hue-2" md-mode="determinate"  md-diameter="100" value="{{user.masterQuest.percentOfActualLevel}}" md-diameter-sm="200" ></md-progress-circular>
+        <md-grid-tile-footer> 
+            <h3>{{user.masterQuest.name}} in Level: {{user.masterQuest.level}} mit:{{user.masterQuest.percentOfActualLevel}}%</h3>
+        </md-grid-tile-footer>
+    </md-grid-tile>
+
+
+
+    <md-grid-tile style="background: #FFC400;" md-rowspan="1" md-colspan="1" ng-repeat="quest in user.quests" ng-click="openQuest(quest.questID)">
+        <md-progress-circular  class="md-accent md-hue-1"  md-mode="determinate"  md-diameter="100" value="{{quest.percentOfActualLevel}}" md-diameter-sm="200"></md-progress-circular>
+        <md-grid-tile-footer>
+            <h3>{{quest.name}} in Level: {{quest.level}} mit:{{quest.percentOfActualLevel}}%</h3>
+        </md-grid-tile-footer>
+    </md-grid-tile>
+</md-grid-list>
+</div>
