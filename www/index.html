@@ -46,7 +46,7 @@
         </md-toolbar>
         <div flex ng-controller="NavigationCtrl" flex layout="column">
             <md-content flex style="overflow-x: hidden;">
-                <a ng-repeat="page in pages" class="menu-item" is="{{page.selected}}" ng-click="openPage(page.url)"
+                <a ng-repeat="page in pages" class="menu-item" is="{{page.selected}}" ng-click="openPage(page)"
                    md-ink-ripple>
                     <i class="icon fa fa-{{page.icon}}"></i>
                     <span ng-cloak style="margin-left: 5px;">{{page.title}}</span>
@@ -70,9 +70,10 @@
         <div layout="column" tabIndex="1" role="main">
             <md-toolbar class="app-toolbar">
                 <div layout="row">
-                    <md-button class="menu-icon" hide-gt-md aria-label="{{'header_toggle_menu'}}"  ng-click="toggleMenu()" style="margin-top: 12px;">
+                    <md-button class="menu-icon" hide-gt-md aria-label="{{'header_toggle_menu'}}"  ng-click="toggleMenu()" style="margin-top: 10px; font-size: 1em;">
                         <i class="fa fa-bars"></i>
                     </md-button>
+                    <span style="margin-top: 16px;">{{title}}</span>
                 </div>
             </md-toolbar>
             <div ng-view="" flex layout="column"></div>
