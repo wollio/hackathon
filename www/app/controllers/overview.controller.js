@@ -1,10 +1,14 @@
 angular.module('feature.overview')
-    .controller('OverviewCtrl', function ($scope, $rootScope, $location, $state, $http) {
+
+    .controller('OverviewCtrl', function ($scope, $rootScope, $location, $state, $http, $mdDialog) {
+
         $rootScope.$broadcast('changeMenuVisibility', false);
-        $http.get('http://hackathon-secanis.rhcloud.com/index.php/api/quest').
+        $scope.allLoaden = false;
+
+        $http.get('https://pfhackathon.secanis.ch/api/quest').
             then(function (respon) {
                 $scope.user = respon.data;
-                $http.get('http://hackathon-secanis.rhcloud.com/index.php/api/history').
+                $http.get('https://pfhackathon.secanis.ch/api/history').
                     then(function (resp) {
                         $scope.history = resp.data;
                         $scope.user.masterQuest.points = 0;
@@ -19,8 +23,8 @@ angular.module('feature.overview')
                             calculateStuff(quest);
                         });
                         calculateStuff($scope.user.masterQuest);
-
-                    }, function (response) {
+                        $scope.allLoaden = true;
+                    }, function (responses) {
                         $rootScope.$broadcast('error');
                     });
             }, function (response) {
@@ -54,6 +58,7 @@ angular.module('feature.overview')
                     allPointsUsed = true;
                 }
             }
+
         };
 
 
