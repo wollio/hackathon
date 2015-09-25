@@ -10,7 +10,7 @@
 
 
     <md-grid-tile style="background: #FFC400;" md-rowspan="1" md-colspan="1" ng-repeat="quest in user.quests" ng-click="openQuest(quest.questID)">
-        <md-progress-circular  class="md-accent md-hue-1"  md-mode="determinate"  md-diameter="100" value="{{quest.percentOfActualLevel}}" md-diameter-sm="200"></md-progress-circular>
+        <md-progress-circular  class="md-accent md-hue-1"  md-mode="determinate"  md-diameter="90" value="{{quest.percentOfActualLevel}}" md-diameter-sm="200"></md-progress-circular>
         <md-grid-tile-footer>
             <h3>{{quest.name}} in Level: {{quest.level}} mit:{{quest.percentOfActualLevel}}%</h3>
         </md-grid-tile-footer>

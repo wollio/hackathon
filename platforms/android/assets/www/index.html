@@ -58,7 +58,7 @@
             </md-content>
             <div>
                 <md-divider></md-divider>
-                <a ng-repeat="action in actions" class="menu-item" ng-click="openPage(action.url)" md-ink-ripple>
+                <a ng-repeat="action in actions" class="menu-item" ng-click="openPage(action)" md-ink-ripple>
                     <i class="icon fa fa-{{action.icon}}"></i>
                     <span ng-cloak style="margin-left: 5px;">{{action.title}}</span>
                 </a>
@@ -74,7 +74,7 @@
         <div layout="column" tabIndex="1" role="main">
             <md-toolbar class="app-toolbar">
                 <div layout="row">
-                    <md-button class="menu-icon" hide-gt-md aria-label="{{'header_toggle_menu'}}"  ng-click="toggleMenu()" style="margin-top: 10px; font-size: 1em;">
+                    <md-button class="menu-icon" hide-gt-md aria-label="{{'header_toggle_menu'}}" ng-hide="hideMenu" ng-click="toggleMenu()" style="margin-top: 10px; font-size: 1em;">
                         <i class="fa fa-bars"></i>
                     </md-button>
                     <span style="margin-top: 16px;">{{title}}</span>

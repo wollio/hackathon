@@ -23,6 +23,9 @@ angular.module('feature.navigation')
         // Funktion welche die geklickte Seite �ffnet
 
         $scope.openPage = function(page) {
+            if (page.title == 'Logout') {
+                page.title = 'Login';
+            }
             $scope.title = page.title;
             $location.path(page.url);
             $mdSidenav('nav').close();

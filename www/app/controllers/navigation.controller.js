@@ -31,7 +31,7 @@ angular.module('feature.navigation')
                 icon: 'refresh',
             },
             {
-                url: 'root',
+                url: '/',
                 title: 'Logout',
                 icon: 'sign-out',
             },
