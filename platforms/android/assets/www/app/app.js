@@ -1,8 +1,10 @@
 angular.module('feature.overview', []);
 angular.module('feature.qrcode', []);
+angular.module('feature.history', []);
 angular.module('feature.settings', []);
 angular.module('feature.navigation', []);
 angular.module('feature.parent', []);
+
 
 angular.module('beFineApp',
     [
