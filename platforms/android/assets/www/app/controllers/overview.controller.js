@@ -31,8 +31,8 @@ angular.module('feature.overview')
                 $rootScope.$broadcast('error');
             });
 
-        $scope.openQuest = function (id) {
-            $location.path('/reward/' + id );
+        $scope.openQuest = function (id, level) {
+            $location.path('/reward/' + id + '/' + level);
         };
 
         var calculateStuff = function (quest) {
@@ -51,9 +51,11 @@ angular.module('feature.overview')
                     quest.level++
                 } else {
                     if (quest.level != 0) {
-                        quest.percentOfActualLevel = 100 / (parseInt(quest.startPoints) * quest.factor * (quest.level + 1) ) * quest.points;
+                        quest.pointsNeededForLevel = (parseInt(quest.startPoints) * quest.factor * (quest.level + 1) );
+                        quest.percentOfActualLevel = 100 / quest.pointsNeededForLevel * quest.points;
                     } else {
-                        quest.percentOfActualLevel = 100 / parseInt(quest.startPoints) * quest.points;
+                        quest.pointsNeededForLevel = parseInt(quest.startPoints);
+                        quest.percentOfActualLevel = 100 / quest.pointsNeededForLevel * quest.points;
                     }
                     allPointsUsed = true;
                 }

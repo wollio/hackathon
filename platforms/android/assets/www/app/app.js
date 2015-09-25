@@ -70,7 +70,7 @@ angular.module('beFineApp', [
             }
         })
         .state('reward', {
-            url: '/reward/:id',
+            url: '/reward/:id/:level',
             views: {
                 '': {
                     templateUrl: 'app/views/reward.html',

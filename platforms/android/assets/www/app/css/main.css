@@ -176,3 +176,16 @@ md-progress-circular.md-hue-2.md-accent .md-inner .md-right .md-half-circle {
 md-progress-circular.md-hue-2.md-accent .md-inner .md-left .md-half-circle, md-progress-circular.md-hue-2.md-accent .md-inner .md-right .md-half-circle {
     border-top-color: #FFC400 !important;
 }
+
+md-grid-list md-grid-tile md-grid-tile-header, md-grid-list md-grid-tile md-grid-tile-footer {
+  height: 35px !important;
+}
+
+.gandalf_der_graue {
+  background: gray !important;
+  opacity: 0.5 !important;
+}
+
+.gold {
+  color: #FFD700 !important;
+}

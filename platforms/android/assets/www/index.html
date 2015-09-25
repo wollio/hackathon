@@ -74,7 +74,7 @@
 
     <div layout="column" layout-fill style="overflow-y: auto">
         <div layout="column" tabIndex="1" role="main">
-            <md-toolbar class="app-toolbar">
+            <md-toolbar class="app-toolbar" style="position: fixed;">
                 <div layout="row">
                     <md-button class="menu-icon" hide-gt-md aria-label="{{'header_toggle_menu'}}" ng-hide="hideMenu" ng-click="toggleMenu()" style="margin-top: 10px; font-size: 1em;">
                         <i class="fa fa-bars"></i>
@@ -85,7 +85,7 @@
             <div ng-view="" flex layout="column"></div>
         </div>
 
-        <md-content flex layout-padding  layout-fill>
+        <md-content flex layout-padding  layout-fill style="padding-top: 4em;">
             <div layout="column" layout-fill layout-align="top center">
                 <div ui-view=""></div>
             </div>
