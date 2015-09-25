@@ -1,5 +1,11 @@
 angular.module('feature.navigation')
     .controller('ParentCtrl', function($scope, $rootScope, $location, $mdSidenav, $mdDialog){
+        $scope.hideMenu = false;
+
+        $scope.$on('changeMenuVisibility', function(event, visible) {
+            $scope.hideMenu = visible;
+        });
+
 
         $scope.$on('error', function(event, args) {
             alert = $mdDialog.alert({

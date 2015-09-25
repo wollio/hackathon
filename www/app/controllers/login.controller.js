@@ -1,12 +1,9 @@
 angular.module('feature.login')
-    .controller('LoginCtrl', function($scope, $rootScope, $location, $state, $mdDialog){
+    .controller('LoginCtrl', function ($scope, $rootScope, $location, $state, $mdDialog) {
 
-
-      $scope.login = function() {
-
-        $location.path($scope.pages[0]);
-
-
-      }
+        $rootScope.$broadcast('changeMenuVisibility', true);
+        $scope.login = function () {
+            $location.path('overview');
+        }
 
     });
