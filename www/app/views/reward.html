@@ -1,6 +1,6 @@
 <md-content>
   <md-grid-list md-cols="2" md-row-height="1:1" md-gutter="12px">
-    <md-grid-tile style="background: #795548;" md-rowspan="1" md-colspan="1" ng-repeat="reward in rewards" ng-click="redeem(reward)" ng-class="{'gandalf_der_graue' : currentQuestLevel < reward.level || reward.inUse == 1}">
+    <md-grid-tile style="background: #795548;" md-rowspan="1" md-colspan="1" ng-repeat="reward in rewards" ng-click="redeem(reward, currentQuestLevel)" ng-class="{'gandalf_der_graue' : currentQuestLevel < reward.level || reward.inUse == 1}">
 
       <i class="fa {{reward.reward}}" style="position: relative; color: white;font-size: 1.8em; left: 5px; top: -5px"></i>
       <p style="position: relative; top: -50px; left: 35px; color: white; font-weight: bold;">{{reward.level}}</p>
