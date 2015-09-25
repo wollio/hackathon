@@ -1,10 +1,12 @@
 <md-content>
-        <md-grid-list md-cols="2" md-row-height="1:1" md-gutter="12px">
-            <md-grid-tile style="background: darkblue;" md-rowspan="1" md-colspan="1" ng-repeat="reward in rewards" ng-click="openQuest(quest.questID)">
-                <i class="fa {{reward.reward}}" style="color: white;font-size: 1.8em"></i>
-                <md-grid-tile-footer>
-                    <h3>{{reward.description}} mit Level: {{reward.level}}</h3>
-                </md-grid-tile-footer>
-            </md-grid-tile>
-        </md-grid-list>
+  <md-grid-list md-cols="2" md-row-height="1:1" md-gutter="12px">
+    <md-grid-tile style="background: #795548;" md-rowspan="1" md-colspan="1" ng-repeat="reward in rewards" ng-click="openQuest(quest.questID)" ng-class="{'gandalf_der_graue' : currentQuestLevel < reward.level }">
+
+      <i class="fa {{reward.reward}}" style="position: relative; color: white;font-size: 1.8em; left: 5px; top: -5px"></i>
+      <p style="position: relative; top: -50px; left: 35px; color: white; font-weight: bold;">{{reward.level}}</p>
+      <md-grid-tile-footer>
+        <h3>{{reward.description}}</h3>
+      </md-grid-tile-footer>
+    </md-grid-tile>
+  </md-grid-list>
 </md-content>

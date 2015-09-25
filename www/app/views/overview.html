@@ -6,14 +6,14 @@
 <div layout-fill ng-show="allLoaden">
 <md-grid-list md-cols="2" md-row-height="1:1" md-gutter="12px">
 
-    <md-grid-tile style="background: #4E342E;" md-rowspan="1" md-colspan="2" ng-click="openQuest(user.masterQuest.questID)">
+    <md-grid-tile style="background: #4E342E;" md-rowspan="1" md-colspan="2" ng-click="openQuest(user.masterQuest.questID, user.masterQuest.level)">
 
-      <div style="position: relative; font-size: 1.5em; width: 100%; left: 18%; color: #FFC400; margin-top: -30px; text-align: center;">
+      <div style="position: relative; font-size: 1.5em; width: 100%; left: 12%; color: #FFC400; margin-top: -33px; text-align: center;">
         <i>{{user.masterQuest.level}}</i>
         <p style="font-size: 0.4em">{{user.masterQuest.points}}/{{user.masterQuest.pointsNeededForLevel}}</p>
       </div>
       <div stlye="position: relative; width: 100%; height: 100%">
-        <md-progress-circular class="md-accent md-hue-2" md-mode="determinate"  md-diameter="100" value="{{user.masterQuest.percentOfActualLevel}}" md-diameter-sm="200" style="left: -96px; top: -10px;"></md-progress-circular>
+        <md-progress-circular class="md-accent md-hue-2" md-mode="determinate"  md-diameter="100" value="{{user.masterQuest.percentOfActualLevel}}" md-diameter-sm="200" style="left: -130px; top: -15px;"></md-progress-circular>
       </div>
 
 
@@ -22,13 +22,13 @@
         </md-grid-tile-footer>
     </md-grid-tile>
 
-    <md-grid-tile style="background: #FFC400;" md-rowspan="1" md-colspan="1" ng-repeat="quest in user.quests" ng-click="openQuest(quest.questID)">
-        <div style="position: relative; font-size: 1.5em; width: 100%; left: 35%; color: #4E342E; margin-top: -20px; text-align: center">
+    <md-grid-tile style="background: #FFC400;" md-rowspan="1" md-colspan="1" ng-repeat="quest in user.quests" ng-click="openQuest(quest.questID, quest.level)">
+        <div style="position: relative; font-size: 1.5em; width: 100%; left: 20%; color: #4E342E; margin-top: -23px; text-align: center">
           <p>{{quest.level}}</p>
           <p style="font-size: 0.4em">{{quest.points}}/{{quest.pointsNeededForLevel}}</p>
         </div>
         <div stlye="position: relative; width: 100%; height: 100%;">
-          <md-progress-circular  class="md-accent md-hue-1"  md-mode="determinate"  md-diameter="90" value="{{quest.percentOfActualLevel}}" md-diameter-sm="200" style="left: -22px; top: -5px"></md-progress-circular>
+          <md-progress-circular  class="md-accent md-hue-1"  md-mode="determinate"  md-diameter="90" value="{{quest.percentOfActualLevel}}" md-diameter-sm="200" style="left: -65px; top: -10px"></md-progress-circular>
         </div>
 
 

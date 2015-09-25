@@ -31,8 +31,8 @@ angular.module('feature.overview')
                 $rootScope.$broadcast('error');
             });
 
-        $scope.openQuest = function (id) {
-            $location.path('/reward/' + id );
+        $scope.openQuest = function (id, level) {
+            $location.path('/reward/' + id + '/' + level);
         };
 
         var calculateStuff = function (quest) {
