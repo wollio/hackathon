@@ -1,6 +1,6 @@
 angular.module('feature.qrcode')
     .controller('QrCodeCtrl', function($scope, $rootScope, $location, $state){
-
+        $rootScope.$broadcast('changeMenuVisibility', false);
 
       $scope.scan = function() {
         cordova.plugins.barcodeScanner.scan(
