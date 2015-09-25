@@ -1,6 +1,8 @@
 angular.module('feature.overview')
-    .controller('OverviewCtrl', function ($scope, $rootScope, $location, $state, $http) {
+    .controller('OverviewCtrl', function ($scope, $rootScope, $location, $state, $http, $mdDialog) {
         $rootScope.$broadcast('changeMenuVisibility', false);
+        $scope.allLoaden = false;
+
         $http.get('http://hackathon-secanis.rhcloud.com/index.php/api/quest').
             then(function (respon) {
                 $scope.user = respon.data;
@@ -9,8 +11,8 @@ angular.module('feature.overview')
                         $scope.history = resp.data;
                         $scope.user.masterQuest.points = 0;
                         $scope.user.quests.forEach(function (quest) {
+                            quest.points = 0;
                             $scope.history.forEach(function (hist) {
-                                quest.points = 0;
                                 if (hist.quest_id == quest.id) {
                                     quest.points += 1;
                                 }
@@ -19,8 +21,8 @@ angular.module('feature.overview')
                             calculateStuff(quest);
                         });
                         calculateStuff($scope.user.masterQuest);
-
-                    }, function (response) {
+                        $scope.allLoaden = true;
+                    }, function (responses) {
                         $rootScope.$broadcast('error');
                     });
             }, function (response) {

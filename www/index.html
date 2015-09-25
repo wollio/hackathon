@@ -46,7 +46,7 @@
 <body ng-app="beFineApp" ng-controller="ParentCtrl">
 <div layout="row" layout-fill>
     <md-sidenav class="md-sidenav-left md-whiteframe-z2 md-closed ng-isolate-scope" md-component-id="nav"
-                md-is-locked-open="$mdMedia('gt-md')" layout="column" style="overflow-y: hidden;">
+                md-is-locked-open="$mdMedia('gt-md')" layout="column" style="overflow-y: hidden; position: fixed">
         <md-toolbar class="md-content-padding">
             beFine
         </md-toolbar>
@@ -72,7 +72,7 @@
         </div>
     </md-sidenav>
 
-    <div layout="column" layout-fill>
+    <div layout="column" layout-fill style="overflow-y: auto">
         <div layout="column" tabIndex="1" role="main">
             <md-toolbar class="app-toolbar">
                 <div layout="row">
