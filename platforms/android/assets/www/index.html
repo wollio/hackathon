@@ -58,7 +58,7 @@
             </md-content>
             <div>
                 <md-divider></md-divider>
-                <a ng-repeat="action in actions" class="menu-item" ng-click="openPage(action.url)" md-ink-ripple>
+                <a ng-repeat="action in actions" class="menu-item" ng-click="openPage(action)" md-ink-ripple>
                     <i class="icon fa fa-{{action.icon}}"></i>
                     <span ng-cloak style="margin-left: 5px;">{{action.title}}</span>
                 </a>

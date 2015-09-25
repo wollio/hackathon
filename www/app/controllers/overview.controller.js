@@ -9,8 +9,8 @@ angular.module('feature.overview')
                         $scope.history = resp.data;
                         $scope.user.masterQuest.points = 0;
                         $scope.user.quests.forEach(function (quest) {
+                            quest.points = 0;
                             $scope.history.forEach(function (hist) {
-                                quest.points = 0;
                                 if (hist.quest_id == quest.id) {
                                     quest.points += 1;
                                 }

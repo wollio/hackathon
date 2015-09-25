@@ -142,12 +142,17 @@ md-progress-circular.md-hue-1.md-accent .md-inner .md-gap {
 md-progress-circular.md-hue-1.md-accent .md-inner .md-left .md-half-circle {
     border-left-color: #4E342E !important;
 }
+md-progress-circular.md-hue-1.md-accent .md-inner .md-left .md-half-circle, md-progress-circular.md-hue-1.md-accent .md-inner .md-right .md-half-circle {
+    border-top-color: #4E342E !important;
+}
 
 md-progress-circular.md-hue-1.md-accent .md-inner .md-right .md-half-circle {
     border-right-color: #4E342E !important;
 }
 
-
+md-progress-circular.md-hue-1.md-accent .md-inner .md-left .md-half-circle, md-progress-circular.md-hue-1.md-accent .md-inner .md-right .md-half-circle {
+    border-top-color: #4E342E !important;
+}
 
 
 
