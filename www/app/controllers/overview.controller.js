@@ -1,5 +1,6 @@
 angular.module('feature.overview')
     .controller('OverviewCtrl', function ($scope, $rootScope, $location, $state, $http) {
+
         $rootScope.$broadcast('changeMenuVisibility', false);
         $http.get('http://hackathon-secanis.rhcloud.com/index.php/api/quest').
             then(function (respon) {
@@ -54,6 +55,7 @@ angular.module('feature.overview')
                     allPointsUsed = true;
                 }
             }
+
         };
 
 
