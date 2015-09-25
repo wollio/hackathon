@@ -6,7 +6,7 @@ angular.module('feature.navigation', []);
 angular.module('feature.parent', []);
 angular.module('feature.history', []);
 angular.module('feature.reward', []);
-
+angular.module('feature.login', []);
 
 
 
@@ -20,12 +20,13 @@ angular.module('beFineApp',
         'feature.navigation',
         'feature.parent',
         'feature.reward',
-        'feature.history'
-
+        'feature.history',
+        'feature.login'
     ]);
 
 angular.module('beFineApp', [
-    'ngAnimate', 'ngResource', 'ui.router', 'ngMaterial', 'feature.overview', 'feature.qrcode', 'feature.settings', 'feature.navigation', 'feature.parent', 'feature.reward', 'feature.history'
+    'ngAnimate', 'ngResource', 'ui.router', 'ngMaterial', 'feature.overview', 'feature.qrcode', 'feature.settings', 'feature.navigation', 'feature.parent', 'feature.reward', 'feature.login', 'feature.history'
+    ]);
 ]).config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
 //        this state will be visible to everyone
@@ -33,14 +34,24 @@ angular.module('beFineApp', [
             url: '',
             views: {
                 '': {
-                    templateUrl: 'app/views/overview.html',
-                    controller: 'OverviewCtrl'
+                    templateUrl: 'app/views/login.html',
+                    controller: 'LoginCtrl'
                 }
             }
         })
 
         .state('/', {
             url: '/',
+            views: {
+                '': {
+                    templateUrl: 'app/views/login.html',
+                    controller: 'LoginCtrl'
+                }
+            }
+        })
+
+        .state('overview', {
+            url: '/overview',
             views: {
                 '': {
                     templateUrl: 'app/views/overview.html',
