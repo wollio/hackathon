@@ -28,8 +28,7 @@ angular.module('feature.overview')
             });
 
         $scope.openQuest = function (id) {
-            $state.transitionTo('reward', id);
-
+            $location.path('/reward/' + id );
         };
 
         var calculateStuff = function (quest) {

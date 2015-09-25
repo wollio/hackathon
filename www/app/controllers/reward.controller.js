@@ -1,6 +1,6 @@
 angular.module('feature.reward')
-    .controller('RewardCtrl', function($scope, $rootScope, $location, $state, $http){
-
+    .controller('RewardCtrl', function($scope, $rootScope, $location, $state, $http, $stateParams){
+        var id = $stateParams.id;
         $http.get('http://hackathon-secanis.rhcloud.com/index.php/api/reward/' + id).
             then(function (resp) {
                 $scope.rewards = resp.data;

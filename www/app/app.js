@@ -4,6 +4,7 @@ angular.module('feature.history', []);
 angular.module('feature.settings', []);
 angular.module('feature.navigation', []);
 angular.module('feature.parent', []);
+angular.module('feature.history', []);
 angular.module('feature.reward', []);
 angular.module('feature.login', []);
 
@@ -19,11 +20,13 @@ angular.module('beFineApp',
         'feature.navigation',
         'feature.parent',
         'feature.reward',
+        'feature.history',
         'feature.login'
     ]);
 
 angular.module('beFineApp', [
-    'ngAnimate', 'ngResource', 'ui.router', 'ngMaterial', 'feature.overview', 'feature.qrcode', 'feature.settings', 'feature.navigation', 'feature.parent', 'feature.reward', 'feature.login'
+    'ngAnimate', 'ngResource', 'ui.router', 'ngMaterial', 'feature.overview', 'feature.qrcode', 'feature.settings', 'feature.navigation', 'feature.parent', 'feature.reward', 'feature.login', 'feature.history'
+    ]);
 ]).config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
 //        this state will be visible to everyone
