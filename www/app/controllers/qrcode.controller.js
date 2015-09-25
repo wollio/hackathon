@@ -12,7 +12,7 @@ angular.module('feature.qrcode')
                            alert = $mdDialog.alert({
                                title: 'Toll',
                                content: 'QR-Scan erfolgreich.',
-                               ok: 'Schlissen'
+                               ok: 'Schliessen'
                            });
                            $mdDialog
                                .show( alert )
@@ -27,7 +27,7 @@ angular.module('feature.qrcode')
            function (error) {
                $rootScope.$broadcast('error');
            }
-        );  
+        );
       }
 
     });

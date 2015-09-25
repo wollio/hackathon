@@ -2,16 +2,16 @@
     <form name="projectForm" flex="100">
       <md-input-container>
         <label>Benutzername</label>
-        <input name="description">
+        <input required ng-model="user.username" name="username">
       </md-input-container>
 
       <md-input-container>
         <label>Passwort</label>
-        <input type="password" name="clientName">
+        <input required type="password" ng-model="user.password" name="password">
       </md-input-container>
 
       <div layout="row" layout-align="center center" layout-wrap>
-        <md-button class="md-raised md-primary" style="display: block;" flex="100" ng-click="login()">login</md-button>
+        <md-button class="md-raised md-primary" ng-disabled="!user.username || !user.password" style="display: block;" flex="100" ng-click="login()">login</md-button>
       </div>
     </form>
 </div>
