@@ -11,7 +11,7 @@ angular.module('feature.navigation')
             alert = $mdDialog.alert({
                 title: 'Achtung!',
                 content: 'Houston, wir haben ein Problem',
-                ok: 'Schlissen'
+                ok: 'Schliessen'
             });
             $mdDialog
                 .show( alert )
