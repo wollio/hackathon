@@ -1,1 +1,8 @@
-history
+<md-list>
+    <md-subheader class="md-no-sticky">Verlauf der Service Benutzung</md-subheader>
+    <md-list-item class="md-3-line" ng-repeat="his in history">
+        <div class="md-list-item-text">
+            <h3>{{ his.name }}</h3>
+        </div>
+    </md-list-item>
+</md-list>
