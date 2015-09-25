@@ -541,6 +541,9 @@
         },
         "phonegap-plugin-barcodescanner": {
             "PACKAGE_NAME": "ch.hackathon.befine"
+        },
+        "sk.kcorp.cordova.ios-security": {
+            "PACKAGE_NAME": "ch.hackathon.befine"
         }
     },
     "dependent_plugins": {}

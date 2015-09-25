@@ -17,7 +17,8 @@ module.exports.metadata =
 // TOP OF METADATA
 {
     "cordova-plugin-whitelist": "1.1.0",
-    "phonegap-plugin-barcodescanner": "4.0.1"
+    "phonegap-plugin-barcodescanner": "4.0.1",
+    "sk.kcorp.cordova.ios-security": "0.3.0"
 }
 // BOTTOM OF METADATA
 });

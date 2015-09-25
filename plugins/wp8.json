@@ -33,6 +33,9 @@
         },
         "phonegap-plugin-barcodescanner": {
             "PACKAGE_NAME": "{0a125750-62f2-11e5-b471-6bf2776812d1}"
+        },
+        "sk.kcorp.cordova.ios-security": {
+            "PACKAGE_NAME": "{0a125750-62f2-11e5-b471-6bf2776812d1}"
         }
     },
     "dependent_plugins": {}
