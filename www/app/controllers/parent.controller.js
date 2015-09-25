@@ -14,10 +14,6 @@ angular.module('feature.navigation')
                 });
         });
 
-
-
-
-
         // Funktion welche die geklickte Seite �ffnet
 
         $scope.openPage = function(page) {
