@@ -13,7 +13,7 @@ angular.module('feature.navigation')
             },
             {
                 url: '/history',
-                title: 'History',
+                title: 'Verlauf',
                 icon: 'list',
             },
             {
