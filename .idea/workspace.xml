@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f2b2bb2-1d07-4d1d-be70-a4d868a92c9f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/app/app.js" afterPath="$PROJECT_DIR$/platforms/android/assets/www/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/index.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app/controllers/login.controller.js" afterPath="$PROJECT_DIR$/www/app/controllers/login.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app/views/login.html" afterPath="$PROJECT_DIR$/www/app/views/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app/controllers/parent.controller.js" afterPath="$PROJECT_DIR$/www/app/controllers/parent.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/platforms/android/assets/www/app/views/qrcode.html" afterPath="$PROJECT_DIR$/platforms/android/assets/www/app/views/qrcode.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app/controllers/history.controller.js" afterPath="$PROJECT_DIR$/www/app/controllers/history.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app/controllers/overview.controller.js" afterPath="$PROJECT_DIR$/www/app/controllers/overview.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app/controllers/qrcode.controller.js" afterPath="$PROJECT_DIR$/www/app/controllers/qrcode.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app/controllers/reward.controller.js" afterPath="$PROJECT_DIR$/www/app/controllers/reward.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app/controllers/settings.controller.js" afterPath="$PROJECT_DIR$/www/app/controllers/settings.controller.js" />
     </list>
     <ignored path="hackathon.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,7 +30,7 @@
       <file leaf-file-name="overview.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/app/views/overview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="-1.9615384">
               <caret line="3" column="146" selection-start-line="3" selection-start-column="146" selection-end-line="3" selection-end-column="146" />
               <folding>
                 <element signature="n#style#0;n#md-grid-tile#0;n#md-grid-list#0;n#div#0;n#!!top" expanded="true" />
@@ -43,21 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/app/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="171" column="41" selection-start-line="171" selection-start-column="41" selection-end-line="171" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.controller.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/app/controllers/login.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16648531">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -79,7 +66,47 @@
         <entry file="file://$PROJECT_DIR$/www/app/controllers/history.controller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="47" />
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reward.controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/app/controllers/reward.controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="61" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.controller.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/app/controllers/settings.controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.036996737">
+              <caret line="2" column="61" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="overview.controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/app/controllers/overview.controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="61" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="qrcode.controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/app/controllers/qrcode.controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="61" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -117,8 +144,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/www/app/app.js" />
-        <option value="$PROJECT_DIR$/www/app/controllers/reward.controller.js" />
-        <option value="$PROJECT_DIR$/www/app/controllers/overview.controller.js" />
         <option value="$PROJECT_DIR$/www/app/views/reward.html" />
         <option value="$PROJECT_DIR$/www/app/views/overview.html" />
         <option value="$PROJECT_DIR$/www/app/css/main.css" />
@@ -126,6 +151,11 @@
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/app/views/login.html" />
         <option value="$PROJECT_DIR$/www/app/controllers/login.controller.js" />
+        <option value="$PROJECT_DIR$/www/app/controllers/history.controller.js" />
+        <option value="$PROJECT_DIR$/www/app/controllers/overview.controller.js" />
+        <option value="$PROJECT_DIR$/www/app/controllers/qrcode.controller.js" />
+        <option value="$PROJECT_DIR$/www/app/controllers/reward.controller.js" />
+        <option value="$PROJECT_DIR$/www/app/controllers/settings.controller.js" />
       </list>
     </option>
   </component>
@@ -354,7 +384,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14791666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -498,14 +528,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/app/controllers/qrcode.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.49945593">
@@ -514,29 +536,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/app/controllers/overview.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5734494">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/app/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/app/views/overview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="146" selection-start-line="3" selection-start-column="146" selection-end-line="3" selection-end-column="146" />
-          <folding>
-            <element signature="n#style#0;n#md-grid-tile#0;n#md-grid-list#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#md-grid-tile#1;n#md-grid-list#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -575,11 +578,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/app/controllers/history.controller.js">
+    <entry file="file://$PROJECT_DIR$/www/app/controllers/navigation.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.073993474">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/app/controllers/parent.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="47" />
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="40" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/app/views/overview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9615384">
+          <caret line="3" column="146" selection-start-line="3" selection-start-column="146" selection-end-line="3" selection-end-column="146" />
+          <folding>
+            <element signature="n#style#0;n#md-grid-tile#0;n#md-grid-list#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#md-grid-tile#1;n#md-grid-list#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -593,34 +615,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/app/controllers/navigation.controller.js">
+    <entry file="file://$PROJECT_DIR$/www/app/controllers/login.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.073993474">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/app/controllers/history.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/app/controllers/overview.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="61" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/app/controllers/qrcode.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="61" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/app/controllers/reward.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.036996737">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/app/controllers/parent.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="40" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="40" />
+          <caret line="2" column="61" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/app/controllers/login.controller.js">
+    <entry file="file://$PROJECT_DIR$/www/app/controllers/settings.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16648531">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.036996737">
+          <caret line="2" column="61" selection-start-line="2" selection-start-column="61" selection-end-line="2" selection-end-column="61" />
           <folding />
         </state>
       </provider>
