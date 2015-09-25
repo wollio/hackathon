@@ -4,7 +4,7 @@
     <Languages xmlns="">
         <Language code="en-US" />
     </Languages>
-    <App Author="Apache Cordova Team" BitsPerPixel="32" Description="A sample Apache Cordova application that responds to the deviceready event." Genre="apps.normal" ProductID="{a4d958a0-6091-11e5-b8c4-b33ceb17335a}" Publisher="Apache Cordova Team" PublisherID="{db093ed5-53b1-45f7-af72-751e8f36ab80}" RuntimeType="Silverlight" Title="beFine" Version="0.0.1" xmlns="">
+    <App Author="Apache Cordova Team" BitsPerPixel="32" Description="A sample Apache Cordova application that responds to the deviceready event." Genre="apps.normal" ProductID="{0a125750-62f2-11e5-b471-6bf2776812d1}" Publisher="Apache Cordova Team" PublisherID="{db093ed5-53b1-45f7-af72-751e8f36ab80}" RuntimeType="Silverlight" Title="beFine" Version="0.0.1" xmlns="">
         <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
         <Capabilities>
             <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />

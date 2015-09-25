@@ -235,7 +235,7 @@
     </ItemGroup>
     <ItemGroup>
         <Reference Include="zxing.wp8.0">
-            <HintPath>plugins/phonegap-plugin-barcodescanner/zxing.wp8.0.dll</HintPath>
+            <HintPath>plugins\phonegap-plugin-barcodescanner\zxing.wp8.0.dll</HintPath>
         </Reference>
     </ItemGroup>
 </Project>
