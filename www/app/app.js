@@ -4,6 +4,9 @@ angular.module('feature.history', []);
 angular.module('feature.settings', []);
 angular.module('feature.navigation', []);
 angular.module('feature.parent', []);
+angular.module('feature.reward', []);
+
+
 
 
 angular.module('beFineApp',
@@ -15,42 +18,53 @@ angular.module('beFineApp',
         'feature.settings',
         'feature.navigation',
         'feature.parent',
+        'feature.reward'
+
     ]);
 
 angular.module('beFineApp', [
-    'ngAnimate', 'ngResource', 'ui.router', 'ngMaterial', 'feature.overview', 'feature.qrcode', 'feature.settings', 'feature.navigation', 'feature.parent',
-]).config(function($stateProvider, $urlRouterProvider) {
+    'ngAnimate', 'ngResource', 'ui.router', 'ngMaterial', 'feature.overview', 'feature.qrcode', 'feature.settings', 'feature.navigation', 'feature.parent', 'feature.reward'
+]).config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
 //        this state will be visible to everyone
-    .state('root', {
-        url: '',
-        views: {
-            '': {
-                templateUrl: 'app/views/overview.html',
-                controller: 'OverviewCtrl'
+        .state('root', {
+            url: '',
+            views: {
+                '': {
+                    templateUrl: 'app/views/overview.html',
+                    controller: 'OverviewCtrl'
+                }
             }
-        }
-    })
-    
-    .state('/', {
-        url: '/',
-        views: {
-            '': {
-                templateUrl: 'app/views/overview.html',
-                controller: 'OverviewCtrl'
-            }
-        }
-    })
+        })
 
-    .state('qrcode', {
-        url: '/qrcode',
-        views: {
-            '': {
-                templateUrl: 'app/views/qrcode.html',
-                controller: 'QrCodeCtrl'
+        .state('/', {
+            url: '/',
+            views: {
+                '': {
+                    templateUrl: 'app/views/overview.html',
+                    controller: 'OverviewCtrl'
+                }
             }
-        }
-    })
+        })
+
+        .state('qrcode', {
+            url: '/qrcode',
+            views: {
+                '': {
+                    templateUrl: 'app/views/qrcode.html',
+                    controller: 'QrCodeCtrl'
+                }
+            }
+        })
+        .state('reward', {
+            url: '/reward/:id',
+            views: {
+                '': {
+                    templateUrl: 'app/views/reward.html',
+                    controller: 'RewardCtrl'
+                }
+            }
+        })
 
         .state('history', {
             url: '/history',
@@ -61,16 +75,16 @@ angular.module('beFineApp', [
                 }
             }
         })
-    
-    .state('settings', {
-        url: '/settings',
-        views: {
-            '': {
-                templateUrl: 'app/views/settings.html',
-                controller: 'SettingsCtrl'
+
+        .state('settings', {
+            url: '/settings',
+            views: {
+                '': {
+                    templateUrl: 'app/views/settings.html',
+                    controller: 'SettingsCtrl'
+                }
             }
-        }
-    })
+        })
 
 //    .state('login', {
 //        url: '/login',
@@ -86,15 +100,15 @@ angular.module('beFineApp', [
 //        }
 //    })
 
-    .state('404', {
-        url: '/404',
-        authenticate: false,
-        views: {
-            '': {
-                templateUrl: 'app/views/404.html'
-           }
-        }
-    })
+        .state('404', {
+            url: '/404',
+            authenticate: false,
+            views: {
+                '': {
+                    templateUrl: 'app/views/404.html'
+                }
+            }
+        })
 
     $urlRouterProvider.otherwise("/404");
 
@@ -104,7 +118,7 @@ angular.module('beFineApp', [
         .accentPalette('brown');
 });
 
-angular.module('beFineApp').run(function($rootScope, $location, $state) {
+angular.module('beFineApp').run(function ($rootScope, $location, $state) {
     /**
      * App Configuration
      * !do not modify!
