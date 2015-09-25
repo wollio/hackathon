@@ -1,17 +1,14 @@
 angular.module('feature.overview')
-<<<<<<< HEAD
-    .controller('OverviewCtrl', function ($scope, $rootScope, $location, $state, $http) {
 
-=======
     .controller('OverviewCtrl', function ($scope, $rootScope, $location, $state, $http, $mdDialog) {
->>>>>>> origin/master
+
         $rootScope.$broadcast('changeMenuVisibility', false);
         $scope.allLoaden = false;
 
-        $http.get('http://hackathon-secanis.rhcloud.com/index.php/api/quest').
+        $http.get('https://pfhackathon.secanis.ch/api/quest').
             then(function (respon) {
                 $scope.user = respon.data;
-                $http.get('http://hackathon-secanis.rhcloud.com/index.php/api/history').
+                $http.get('https://pfhackathon.secanis.ch/api/history').
                     then(function (resp) {
                         $scope.history = resp.data;
                         $scope.user.masterQuest.points = 0;
