@@ -1,1 +1,27 @@
-settings
+<div layout="row" layout-align="center center" layout-wrap>
+
+    <form name="projectForm" flex="100">
+      <md-input-container>
+        <label>Passwort</label>
+        <input required type="password" name="description">
+
+      </md-input-container>
+      <md-input-container>
+        <label>neues Passwort</label>
+        <input required type="password" name="clientName">
+
+      </md-input-container>
+      <md-input-container>
+        <label>neues Passwort wiederholen</label>
+        <input required type="password" step="any" name="rate">
+
+      </md-input-container>
+
+      <div layout="row" layout-align="center center" layout-wrap>
+        <md-button class="md-raised md-primary" ng-click="">speichern</md-button>
+        <md-button class="md-raised" ng-click="">abbrechen</md-button>
+      </div>
+    </form>
+
+
+</div>
