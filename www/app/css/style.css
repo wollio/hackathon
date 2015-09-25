@@ -110,5 +110,11 @@ button.menu-icon {
     font-size: 16px;
 }
 
+.historyList:nth-child(odd) {
+  background-color: #fff;
+}
+.historyList:nth-child(even) {
+  background-color: #d7ccc8;
+}
 
 

@@ -1,8 +1,12 @@
 <md-list>
-    <md-subheader class="md-no-sticky">Verlauf der Service Benutzung</md-subheader>
-    <md-list-item class="md-3-line" ng-repeat="his in history">
-        <div class="md-list-item-text">
-            <h3>{{ his.name }}</h3>
+    <md-list-item class="md-3-line historyList" ng-repeat="his in history">
+        <div class="md-avatar">
+            <h2 style="margin-left:10px;text-align: center;">{{ his.date * 1000 | date: 'dd' }}</h2>
+            <span style="text-align: center;font-size:0.7em;">{{ his.date * 1000 | date: 'MMMM' }}</span>
+        </div>
+        <div class="md-list-item-text" style="margin-left:30px;">
+            <h2 style="font-size:1em">{{ his.name }}</h2>
+            <h4>{{ his.points }} <small>Punkte</small></h4>
         </div>
     </md-list-item>
 </md-list>
