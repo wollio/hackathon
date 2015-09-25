@@ -14,17 +14,11 @@ angular.module('feature.navigation')
                 });
         });
 
-
-
-
-
-        // Funktion welche die geklickte Seite öffnet
-        $scope.openPage = function (page) {
-            $location.path(page);
-        };
+        // Funktion welche die geklickte Seite ï¿½ffnet
 
         $scope.openPage = function(page) {
-            $location.path(page);
+            $scope.title = page.title;
+            $location.path(page.url);
             $mdSidenav('nav').close();
         };
 
