@@ -8,8 +8,8 @@ angular.module('feature.overview')
                     then(function (resp) {
                         $scope.history = resp.data;
                         $scope.user.masterQuest.points = 0;
-                        $scope.user.quests.forEach(function(quest) {
-                            $scope.history.forEach(function(hist) {
+                        $scope.user.quests.forEach(function (quest) {
+                            $scope.history.forEach(function (hist) {
                                 quest.points = 0;
                                 if (hist.quest_id == quest.id) {
                                     quest.points += 1;
@@ -27,14 +27,17 @@ angular.module('feature.overview')
                 $rootScope.$broadcast('error');
             });
 
+        $scope.openQuest = function (id) {
+            $location.path('/reward/' + id );
+        };
 
-        var calculateStuff = function(quest) {
+        var calculateStuff = function (quest) {
             var allPointsUsed = false;
             quest.level = 0;
             var pointsNeededForLevel = 0;
-            while(!allPointsUsed) {
+            while (!allPointsUsed) {
                 if (quest.level != 0) {
-                    pointsNeededForLevel =  parseInt(quest.startPoints) * quest.factor * quest.level;
+                    pointsNeededForLevel = parseInt(quest.startPoints) * quest.factor * quest.level;
                 } else {
                     pointsNeededForLevel = parseInt(quest.startPoints);
                 }
@@ -44,14 +47,14 @@ angular.module('feature.overview')
                     quest.level++
                 } else {
                     if (quest.level != 0) {
-                        quest.percentOfActualLevel = 100 / (parseInt(quest.startPoints) * quest.factor *  (quest.level + 1) ) * quest.points;
+                        quest.percentOfActualLevel = 100 / (parseInt(quest.startPoints) * quest.factor * (quest.level + 1) ) * quest.points;
                     } else {
-                        quest.percentOfActualLevel = 100 / parseInt(quest.startPoints) *  quest.points;
+                        quest.percentOfActualLevel = 100 / parseInt(quest.startPoints) * quest.points;
                     }
                     allPointsUsed = true;
                 }
             }
-        }
+        };
 
 
     });
