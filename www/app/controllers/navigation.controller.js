@@ -2,7 +2,7 @@ angular.module('feature.navigation')
     .controller('NavigationCtrl', function($scope, $rootScope, $location, $state){
         $scope.pages = [
             {
-                url: '/',
+                url: '/overview',
                 title: 'Quests',
                 icon: 'trophy',
             },
@@ -31,7 +31,7 @@ angular.module('feature.navigation')
                 icon: 'refresh',
             },
             {
-                url: '/',
+                url: 'root',
                 title: 'Logout',
                 icon: 'sign-out',
             },
