@@ -15,7 +15,7 @@ angular.module('feature.overview')
                         $scope.user.quests.forEach(function (quest) {
                             quest.points = 0;
                             $scope.history.forEach(function (hist) {
-                                if (hist.quest_id == quest.id) {
+                                if (hist.questID == quest.questID) {
                                     quest.points += 1;
                                 }
                             });
