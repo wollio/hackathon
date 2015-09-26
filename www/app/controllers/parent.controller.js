@@ -26,6 +26,10 @@ angular.module('feature.navigation')
             if (page.title == 'Logout') {
                 page.title = 'Login';
             }
+            if (page.title == 'Aktualisieren') {
+                page.title = 'Quests';
+            }
+
             $scope.title = page.title;
             $location.path(page.url);
             $mdSidenav('nav').close();
