@@ -26,7 +26,7 @@ angular.module('feature.navigation')
 
         $scope.actions = [
             {
-                url: '/',
+                url: '/overview',
                 title: 'Aktualisieren',
                 icon: 'refresh',
             },
